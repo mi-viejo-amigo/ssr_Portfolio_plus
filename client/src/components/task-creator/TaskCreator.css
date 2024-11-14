@@ -1,0 +1,129 @@
+.task-creator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: auto;
+    color: #646cffaa;
+    /* gap: 5px; */
+}
+
+.task-creator__title {
+    font-size: 60px;
+    font-weight: bold;
+    color: inherit;
+}
+
+.task-creator__form {
+    display: flex;
+    gap: 30px;
+}
+
+.task-creator__input {
+    font-size: large;
+    font-weight: bold;
+    color: inherit;
+    border-color: transparent;
+    border-radius: 5px;
+    background-color: rgb(47, 45, 62);
+}
+
+.task-creator__input::placeholder {
+    color: inherit;
+    padding: 0 5px;
+    font-size: medium;
+    opacity: 0.6;
+}
+
+.task-creator__list {
+    display: flex;
+    padding: 0 20px;
+    margin: 0;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    list-style: none;
+    width: 100%;
+    /* flex: 1; */
+    /* overflow: hidden; */
+}
+
+/* .task-creator__list li {
+    width: 70%;
+} */
+
+.task-creator__item {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: x-large;
+    font-weight: bold;
+    color: #646cffaa;
+    /* background-color: rgb(47, 45, 62); */
+    /* border: 2px solod rgb(24, 17, 88); */
+    border-radius: 5px;
+    min-width: 70%;
+    padding: 8px 25px;
+    user-select: none;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.12), 0 6px 6px rgba(0,0,0,0.24);
+    transition: box-shadow 0.3s;
+}
+
+.task-creator__item-text {
+    position: relative;
+    right: 100px;
+}
+
+.task-creator__item-content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+}
+
+.task-creator__drag-icon {
+    cursor: grab;
+}
+
+.task-creator__delete-button {
+    background-image: url('../../assets/icon-Delete-80.png');
+    background-size: cover;
+    height: 15px;
+    width: 15px;
+    cursor: pointer;
+}
+
+.task-creator__counter {
+    font-size: large;
+    font-weight: bold;
+}
+
+/* .example-container {
+    position: relative;
+    width: 50px;
+    height: 50px;
+  } */
+
+.box {
+    background: transparent;
+    border-radius: 30px;
+    width: 60px;
+    height: 80%;
+    position: absolute;
+    top: calc(50% - 80% / 2);
+    left: calc(75% - 60px / 2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+  }
+  
+  .progress-icon {
+    width: 75%;
+    height: 75%;
+  }
+
+  .progress-icon_path-circle {
+    transform: translateX(5px) translateY(5px);
+  }

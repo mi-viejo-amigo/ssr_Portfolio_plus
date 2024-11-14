@@ -1,0 +1,77 @@
+/* @keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+} */
+
+/* Стиль обертки для всех сообщений */
+.messages {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    /* animation: fadeInUp 0.5s ease forwards; */
+}
+
+/* Основной контейнер для сообщения */
+.message {
+    display: flex;
+    flex-direction: column;
+    max-width: 70%;
+    color: #f1f4f9;
+    font-size: 16px;
+    position: relative;
+    transition: background 0.3s ease;
+    padding: 0;
+}
+
+/* Имя пользователя */
+.messageUser {
+    padding: 0 20px;
+    font-weight: bold;
+    color: rgb(74, 85, 212);
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+/* Контейнер для основного текста сообщения */
+.messageTextContainer {
+    max-width: 100%;
+    padding: 10px 20px;
+    border-radius: 20px;
+    /* background: linear-gradient(145deg, #333946, #2a2f3b); */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+/* Основной текст сообщения */
+.messageText {
+    max-width: 100%;
+    color: #e4e9ef;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+}
+
+/* Стили для собственных сообщений */
+.myMessage {
+    align-items: flex-end;
+    align-self: flex-end;
+}
+
+.myMessage .messageTextContainer {
+    background: linear-gradient(145deg, #2d333b, #242930);
+}
+
+/* Стили для сообщений других пользователей */
+.otrerMessage {
+    align-items: flex-start;
+    align-self: flex-start;
+}
+
+.otrerMessage .messageTextContainer {
+    background: linear-gradient(145deg, #3a3f4b, #333840);
+}
